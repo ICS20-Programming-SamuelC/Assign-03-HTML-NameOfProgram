@@ -10,10 +10,24 @@
  */
 function calculate () {
   // input
-  const radius = parseInt(document.getElementById('radius').value)
+  let score1 = parseInt(document.getElementById('score1').value)
+  // input
+  let score2 = parseInt(document.getElementById('score2').value)
+  // input
+  let score3 = parseInt(document.getElementById('score3').value)
+  // input
+  let score4 = parseInt(document.getElementById('score4').value)
+  // input
+  let score5 = parseInt(document.getElementById('score5').value)
+  // input
+  let score6 = parseInt(document.getElementById('score6').value)
+  // input
+  let score7 = parseInt(document.getElementById('score7').value)
+  // input
+  let score8 = parseInt(document.getElementById('score8').value)
   // process
-  const volume = 4/3 * 3.141 * radius ** 3
+  const handicap = (score1+score2+score3+score4+score5+score6+score7+score8)/8-72
 
   // output
-  document.getElementById('volume').innerHTML = 'The volume of a sphere is ' + volume.toFixed(3) + ' cm cubed. '
+  document.getElementById('handicap').innerHTML = 'You have a ' + handicap.toFixed(2) + ' gold handicap index. '
 }

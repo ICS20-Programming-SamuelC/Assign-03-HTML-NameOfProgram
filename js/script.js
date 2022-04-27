@@ -29,5 +29,5 @@ function calculate () {
   const handicap = (score1+score2+score3+score4+score5+score6+score7+score8)/8-72
 
   // output
-  document.getElementById('handicap').innerHTML = 'You have a ' + handicap.toFixed(2) + ' gold handicap index. '
+  document.getElementById('handicap').innerHTML = 'You have a ' + handicap.toFixed(2) + ' golf handicap index. '
 }
